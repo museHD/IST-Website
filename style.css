@@ -229,13 +229,13 @@ src: local('Space Ranger Expanded Italic Expanded Italic'), url('fonts/spacerang
 
 
 .textL{
-	float: left;
 	width: 50%;
 	color: white;
+	margin-bottom: 100px;
 }
 
 .textR{
-	float: right;
+	float:right;
 	width: 50%;
 	color: white;
 }
