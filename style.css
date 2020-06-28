@@ -62,8 +62,14 @@ html {
 	margin-left: -65px;
 	margin-top: -50px;
 }
-#container {
-
+.container {
+	z-index: -1;
+	margin-bottom: -60px;
+  display: flex;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   /*offset-path: path('M,100,300,Q,150,50,200,300,Q,250,450,300,350,Q,350,50,200,250,C,50,550,50,400,100,300,C,150,450,300,500,250,300,A,50,50,0,1,1,100,300 ');*/
   /*position: relative;
   height: 100vh;
@@ -142,7 +148,7 @@ src: local('Space Ranger Expanded Italic Expanded Italic'), url('fonts/spacerang
     src: url(".fonts/spacerangerexpand.woff") format('woff');
 }*/
 
-h5{
+.subtitle{
 	font-family: "subFont", sans-serif;
 	font-size: 32px;
 	letter-spacing: 0.03em;
@@ -196,7 +202,7 @@ h5{
   100%{
   	transform: rotate(0deg);
   }*/
-}
+}}
 
 /*.text{
 	color: white;
@@ -206,6 +212,33 @@ h5{
 	color: white;
 	text-align: right;
 }*/
+
+
+.subheading{
+	margin-top: 775px;
+	padding: 3px;
+	padding-left: 10px;
+	margin-left:-10px;
+	margin-right: -10px; 
+	color:black;
+	background-color: rgb(191, 191, 191);
+	font-family: 'subFont';
+	font-size: 32px;
+	font-weight: 100;
+}
+
+
+.textL{
+	float: left;
+	width: 50%;
+	color: white;
+}
+
+.textR{
+	float: right;
+	width: 50%;
+	color: white;
+}
 
 .text{
 	width:30px;
@@ -228,3 +261,4 @@ img{
     -webkit-user-select: none;
     user-select: none;
 }
+
