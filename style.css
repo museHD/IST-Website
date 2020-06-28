@@ -60,6 +60,7 @@ html {
 .parallaxbg{
 	width:110%;
 	margin-left: -65px;
+	margin-top: -50px;
 }
 #container {
 
@@ -85,23 +86,87 @@ p{
   background: red;
 }
 
+.heading{
+
+	font-family:'headingFont';
+	font-weight:200;
+	letter-spacing: 0.02em;
+	font-size:42px;
+	color:white;
+	margin-left: 900px;
+	margin-top: 200px;
+	/*-webkit-animation: mover 20s infinite  alternate;
+    animation: mover 20s infinite  alternate;*/
+}
+
+.vidButton{
+	margin-top: -30px;
+	width:170px;
+	font-size: 24px;
+	padding: 15px;
+	border: 5px solid white;
+	border-radius: 30px;
+	background-color: black;
+}
+
+.mayb a:hover{
+	-webkit-animation: abcd 2s infinite alternate;
+    animation: abcd 2s  infinite alternate;
+}
+@keyframes abcd{
+	0%{
+		background-color: black;
+		color:white;
+	}
+
+	100%{
+		background-color: white;
+		color: black;
+	}
+}
+
+@font-face {
+    font-family: "headingFont";
+    src: url("fonts/spaceranger.woff") format('woff');
+}
+
+@font-face {
+font-family: 'subFont';
+font-style: normal;
+font-weight: normal;
+src: local('Space Ranger Expanded Italic Expanded Italic'), url('fonts/spacerangerexpandital.woff') format('woff');
+}
+/*
+@font-face {
+    font-family: "subFont";
+    src: url(".fonts/spacerangerexpand.woff") format('woff');
+}*/
+
+h5{
+	font-family: "subFont", sans-serif;
+	font-size: 32px;
+	letter-spacing: 0.03em;
+	font-weight: 100;
+}
 #naut{
 	width: 300px;
 	margin-top: 35px;
     margin-left: 75px;
 /*	background: black;*/
 
-    -webkit-animation: mover 20s infinite  alternate;
-    animation: mover 20s infinite  alternate;
+    -webkit-animation: mover 20s infinite  alternate ease-in-out;
+    animation: mover 20s infinite  alternate ease-in-out;
 }
+
+
 
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-150px); }
+    100% { transform: translateY(-75px); }
 }
 @keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-150px); }
+    100% { transform: translateY(-75px); }
 }
 
 .rotate {
@@ -147,4 +212,19 @@ p{
 	align-content: center;
 	justify-content: all;
 	text-align: center;
+}
+
+.selectDisable {
+    -webkit-user-select: none;
+   /* -khtml-user-select: none;*/
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+img{
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
