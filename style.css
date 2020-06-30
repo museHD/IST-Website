@@ -58,10 +58,14 @@ html {
 }
 
 .parallaxbg{
+	max-width: 115%
+	height: 109%;
 	width:110%;
 	margin-left: -65px;
 	margin-top: -50px;
 }
+
+
 .container {
 	z-index: -1;
 	margin-bottom: -60px;
@@ -213,25 +217,55 @@ src: local('Space Ranger Expanded Italic Expanded Italic'), url('fonts/spacerang
 	text-align: right;
 }*/
 
-
-.subheading{
-	margin-top: 775px;
+.divider{
+	margin-top: 764px;
 	padding: 3px;
 	padding-left: 10px;
 	margin-left:-10px;
-	margin-right: -10px; 
-	color:black;
-	background-color: rgb(191, 191, 191);
+	margin-right: -10px;
+	background-color: white	;
+	height: 45px;
+
+}
+
+.subheadingL{
+	width: 55%;
+	color:white;
 	font-family: 'subFont';
-	font-size: 32px;
+	font-size: 48px;
 	font-weight: 100;
 }
 
+.subheadingR{
+	width: 50%;
+	float: right;
+	color:white;
+	font-family: 'subFont';
+	font-size: 48px;
+	font-weight: 100;
+}
 
+.imgR{
+	  position: absolute;
+
+	width: 49%;
+	height: 300px;
+	right: 0;
+}
+
+.imgL{
+	margin-top: 180px;
+	position: absolute;
+	left: 0;
+	width: 49%;
+	height: 300px;
+	float:left;
+}
 .textL{
 	width: 50%;
 	color: white;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
+	margin-right: -300px;
 }
 
 .textR{
@@ -240,12 +274,19 @@ src: local('Space Ranger Expanded Italic Expanded Italic'), url('fonts/spacerang
 	color: white;
 }
 
-.text{
-	width:30px;
-	align-content: center;
-	justify-content: all;
-	text-align: center;
+@font-face {
+	font-family: "textFont";
+    src: url("fonts/SF-UI-Text-Regular.otf") format('opentype');
+
 }
+
+.text{
+	margin-left: 10px;
+	font-size: 21px;
+	margin-top: 10px;
+	line-height: 1.6;
+	font-family: "textFont";
+}	
 
 .selectDisable {
     -webkit-user-select: none;

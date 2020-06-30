@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" type="text/css" href="style.css">>
+	<title></title>
+</head>
+<body>
+	<div class = "splash"> 
+
+	<div id="container" class="container">
+		<div id="scene" class="scene">
+			
+			<div class="zoom" data-depth="0.3"><img class="parallaxbg" src = "./images/spaceParallax.png"></div>
+
+			<div class = "zoom" data-depth="0.6">
+				<div id="naut" >
+			<img class = "rotate" src="./images/sbaceman.png"></div>
+		</div>
+
+			<div  data-depth="0.6">
+				<div class="yes heading">
+					<h1> The Space Age </h1>
+					<h5 class="subtitle yes"> The role of Robotics in Space Exploration</h5>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	<!-- Scripts -->
+	<!-- <script src="../parallax.js"></script> -->
+	
+	<script src="./scripts/anime.min.js"></script>
+	<script src="./scripts/parallax.min.js"></script>
+
+	<script>
+	// Builds Parallax scene
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script><!-- 
+<div class="zoom">
+    <img src="https://i.postimg.cc/cCkd6pXx/2.jpg">
+   </div> -->
+<div class="main-text">
+       <h2>
+Main Text</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis doloremque, placeat tenetur minus, aspernatur dolor dolorum porro cum earum saepe aperiam suscipit ipsam. Explicabo blanditiis rem qui quaerat earum totam iusto necessitatibus, consectetur, alias labore, aliquid id dolorem eveniet officia nihil debitis fugit. Quisquam laborum nam libero ea? Deleniti, accusantium!</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis doloremque, placeat tenetur minus, aspernatur dolor dolorum porro cum earum saepe aperiam suscipit ipsam. Explicabo blanditiis rem qui quaerat earum totam iusto necessitatibus, consectetur, alias labore, aliquid id dolorem eveniet officia nihil debitis fugit. Quisquam laborum nam libero ea? Deleniti, accusantium!</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis doloremque, placeat tenetur minus, aspernatur dolor dolorum porro cum earum saepe aperiam suscipit ipsam. Explicabo blanditiis rem qui quaerat earum totam iusto necessitatibus, consectetur, alias labore, aliquid id dolorem eveniet officia nihil debitis fugit. Quisquam laborum nam libero ea? Deleniti, accusantium!</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis doloremque, placeat tenetur minus, aspernatur dolor dolorum porro cum earum saepe aperiam suscipit ipsam. Explicabo blanditiis rem qui quaerat earum totam iusto necessitatibus, consectetur, alias labore, aliquid id dolorem eveniet officia nihil debitis fugit. Quisquam laborum nam libero ea? Deleniti, accusantium!</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        $(".zoom img").css({
+            width: (100 + scroll/5) + "%"
+        })
+		$(".yes").css({
+			font-size: (32 + scroll/5) + "px"
+		})
+    })
+</script>
+
+</body>
+</html>
+
+

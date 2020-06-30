@@ -36,7 +36,7 @@
 </div>
 	<!-- Scripts -->
 	<!-- <script src="../parallax.js"></script> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
 	<script src="./scripts/anime.min.js"></script>
 	<script src="./scripts/parallax.min.js"></script>
 
@@ -46,19 +46,34 @@
 	var parallax = new Parallax(scene);
 
 	</script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        $(".scene").css({
+            width: (100 + scroll/5) + "%"
+
+        })
+    })
+</script>
 </div>
 
-<div class="subheading">
-	<h2>What is Space Robotics?</h2>
+<div class="divider">
 </div>
 
-<div class="textL">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<h2 class="subheadingL">What is Space Robotics?</h2>
+<div>
+<img class="imgR" src="images/img.jpg">
+</div>
+<div class="text textL">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -66,7 +81,10 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 
-<div class="textR">
+
+<h2 class="subheadingR">What is Space Robotics used for?</h2>
+
+<div class="text textR">
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -80,5 +98,14 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 
+<div>
+<img class="imgL"src="images/img.jpg">
+</div>
+<div class="divider"> </div>
+
+
 </body>
+
 </html>
+
+
