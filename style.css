@@ -129,14 +129,30 @@ p{
 }
 
 .heading{
+	line-height: 4.2;
 
 	font-family:'headingFont';
 	font-weight:200;
 	letter-spacing: 0.02em;
-	font-size:42px;
+	font-size:8px;
 	color:white;
 	margin-left: 900px;
 	margin-top: 200px;
+	/*-webkit-animation: mover 20s infinite  alternate;
+    animation: mover 20s infinite  alternate;*/
+}
+
+.heading1{
+	line-height: 4.2;
+
+	font-family:'headingFont';
+	font-weight:200;
+	letter-spacing: 0.02em;
+	font-size:12px;
+	color:white;
+	margin-bottom: 25px;
+	margin-top: 30px;
+	margin-left: 50px;
 	/*-webkit-animation: mover 20s infinite  alternate;
     animation: mover 20s infinite  alternate;*/
 }
@@ -169,14 +185,14 @@ p{
 
 @font-face {
     font-family: "headingFont";
-    src: url("fonts/spaceranger.woff") format('woff');
+    src: url("fonts/top.ttf") format('truetype');
 }
 
 @font-face {
 font-family: 'subFont';
 font-style: normal;
 font-weight: normal;
-src: local('Space Ranger Expanded Italic Expanded Italic'), url('fonts/spacerangerexpandital.woff') format('woff');
+src: url('fonts/moonglade.ttf') format('truetype');
 }
 /*
 @font-face {
@@ -185,10 +201,12 @@ src: local('Space Ranger Expanded Italic Expanded Italic'), url('fonts/spacerang
 }*/
 
 .subtitle{
+
+	line-height: 1;
 	font-family: "subFont", sans-serif;
 	font-size: 32px;
 	letter-spacing: 0.03em;
-	font-weight: 100;
+	font-weight: 500;
 }
 #naut{
 	width: 300px;
@@ -310,6 +328,19 @@ src: local('Space Ranger Expanded Italic Expanded Italic'), url('fonts/spacerang
 	margin-right: -300px;
 }
 
+.textL1{
+	font-size: 21px;
+	margin-top: 15px;
+	line-height: 1.6;
+	color:white;
+	font-family: "textFont";
+	width: 50%;
+	color: white;
+	margin-bottom: 5px;
+	margin-left: 50px;
+	margin-right: 40px;
+}
+
 .textR{
 	float:right;
 	width: 50%;
@@ -327,8 +358,46 @@ src: local('Space Ranger Expanded Italic Expanded Italic'), url('fonts/spacerang
 	font-size: 21px;
 	margin-top: 10px;
 	line-height: 1.6;
+	color:white;
 	font-family: "textFont";
 }	
+
+.zoom {
+
+
+  min-width: 100%;
+  max-width: 175%;
+  min-height: 70rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom img {
+	margin-left: -10px;
+	margin-right:-10px;
+	width: 50%;
+	min-width: 100%;
+	max-width: 195%;
+  position: absolute;
+  top: 0;
+align-content: center;}
+/*#zoom-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0
+  background-image: url("images/general.jpg");
+}
+*/
+
+.footer{
+	text-align: center;
+}
+
 
 .selectDisable {
     -webkit-user-select: none;
