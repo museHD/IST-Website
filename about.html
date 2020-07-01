@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+
+<body>
+<div id="about"> </div>
+<div id="nav" class="navtop">
+
+	<a href="index.html">Back to Home</a>
+	<a class="active" href="#resources">Resources</a>
+	<a href="#about">About</a>
+	<a href="#contact">Contact</a>	
+</div>
+
+<div class="heading2">About This Website</div>
+
+<div class="text textL">This website was made as an assignment for a Year 10 IST Project. It was created using JQuery, Javascript and HTML. The design for the website was made using Adobe Creative Cloud products such as Photoshop and Illustrator.</div>
+
+<div id="resources" class="subheadingL">Resources</div>
+<ol class="text">
+	<li>Hero BG Source: <i>https://techplanet.today/category/space</i></li>
+	<li>Spaceman Hero Source: <i>https://ya-webdesign.com/explore/astronaut-art-png/ </i></li>
+	<li>Parallax Img 2 Source: <i>https://www.tu-berlin.de/menue/summer_university/summer_university_term_3/space_robotics/</i></li>
+	<li>Space Robotics Source: <i>https://www.nasa.gov/audience/foreducators/stem-on-station/learning_launchers_robotics</i></li>
+	<li>Uses Img Source: <i>https://www.nasa.gov/directorates/spacetech/centennial_challenges/space_robotics/index.html</i></li>
+	<li>Info: NASA</li>
+	<li>Info: TechPlanets.net</li>
+	<li>Info: azRobotics</li>
+	<li>Videos: Youtube - NASA Video</li>
+	<li>Videos: Youtube - National Geographic</li>
+	<li>Videos: Youtube - JPL</li>
+</ol>
+
+<div class="subheadingL">Features</div>
+
+<ul class="text">
+	<li>Mouse Responsive Parallax</li>
+	<li>Image Animations</li>
+	<li>Custom Scrollbar</li>
+	<li>Interactive Buttons</li>
+	<li>Headings activate animations when they appear on screen</li>
+	<li>Parallax Zoom Effect</li>
+	<li>Embedded Videos</li>
+	<li>Footer with References and Back to Top Button</li>
+
+</ul>
+
+<div class="subheadingL">Documentation</div>
+<div class="text link">
+<a href="Documentation.pdf" target="_blank">Open Documentation</a>
+</div>
+
+
+<div id="contact" class="heading3">Contact</div>
+<ul class="text">
+	<li>MuseHD</li>
+	<li>My Email: UNAVAILABLE</li>
+	<li><a class="link" href="https://www.github.com/museHD">My Github</a></li>
+	
+	
+</ul>
+
+<script>$(document).ready(function() {
+    $('a[href=#about]').click(function(){
+        $('html').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+})</script>
+
+</body>
+</html>

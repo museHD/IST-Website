@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html>
+<a name="home"></a>
+<head>
+	<title>
+		Space Robotics
+	</title>
+</head>
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+
+
+<body>
+<div></div>
+<div class = "splash"> 
+
+	<div id="container" class="container">
+		<div id="scene" class="scene">
+			
+			<div data-depth="0.3"><img class="parallaxbg" src = "./images/spaceParallax.png"></div>
+
+			<div data-depth="0.6">
+				<div id="naut" >
+			<img class = "rotate" src="./images/sbaceman.png"></div>
+		</div>
+
+			<div data-depth="0.6">
+				<div class="heading">
+					<h1 class="show-on-scroll animate__animated animate__fadeInUp"> The Space Age </h1>
+					<h5 class="subtitle show-on-scroll animate__animated animate__fadeInUp"> The role of Robotics in Space Exploration</h5>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+	<!-- Parallax Script -->
+	<!-- <script src="../parallax.js"></script> -->
+	
+	<script src="./scripts/anime.min.js"></script>
+	<script src="./scripts/parallax.min.js"></script>
+
+	<script id="home">
+	// Builds Parallax scene
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        $(".scene").css({
+            width: (100 + scroll/5) + "%"
+
+        })
+    })
+</script>
+
+
+</div>
+
+<div class="divider">
+</div>
+
+<h2 class="subheadingL show-on-scroll animate__animated">What is Space Robotics?</h2>
+<div>
+<img class="imgR" src="images/img.jpg">
+</div>
+<div class="text textL">
+Space robotics is the development of general purpose machines that are capable of surviving (for a time, at
+least) the rigors of the space environment, and performing exploration, assembly, construction, maintenance,
+servicing or other tasks that may or may not have been fully understood at the time of the design of the robot.
+Humans control space robots from either a “local” control console (e.g. with essentially zero speed-of-light
+delay, as in the case of the Space Shuttle robot arm controlled by astronauts inside the
+pressurized cabin) or “remotely” (e.g. with non-negligible speed-of-light delays, as in the case of the Mars
+Exploration Rovers controlled from human operators on Earth). Space robots are generally
+designed to do multiple tasks, including unanticipated tasks, within a broad sphere of competence (e.g.
+payload deployment, retrieval, or inspection; planetary exploration). .</div>
+
+
+<h2 class="subheadingR show-on-scroll animate__animated ">What is Space Robotics used for?</h2>
+
+<div class="text textR">
+	We can send robots to explore space without having to worry so much about their safety. Of course, we want these carefully built robots to last. We need them to stick around long enough to investigate and send us information about their destinations. But even if a robotic mission fails, the humans involved with the mission stay safe.Sending a robot to space is also much cheaper than sending a human. Robots don’t need to eat or sleep or go to the bathroom. They can survive in space for many years and can be left out there—no need for a return trip! <br> Robots play a vital role in exploring the hostile environment of outer space. Besides the Earth, the Moon is the only celestial body that humans have stepped on. However, advancements in research are making it possible for robotic missions to reach space faster and gather more information than humans. 
+</div>
+
+<div>
+<img class="imgL"src="images/img2.jpg">
+</div>
+
+<div class="divider"> </div>
+
+<div class="zoom">
+	<img src="images/robots-today.jpg">
+</div>
+
+
+<div class="heading1">Robots - Today</div>
+
+<div class="heading1 subtitle">Robonaut</div>
+
+<div class="textR1"><iframe width="560" height="315" src="https://www.youtube.com/embed/Wf8E1Iyelu4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="vidButton"><a href="https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-robonaut-58.html" target="_blank">Learn More</a>
+
+</div></div>
+
+<div class="textL1">
+	 Engineers designed Robonaut to be humanoid, which means it is built to look like a person. This makes it easier for Robonaut to do the same jobs as a person. Robonaut could help with anything from working on the International Space Station to exploring other worlds. A Robonaut has been to the station. It is back on Earth for upgrades, but will return to the station.
+
+	 Robonaut can function in two ways. Software allows Robonaut to "think" for itself. The people who control R2 can give it a simple task to do, and R2 can figure out how to do it. R2's software can be updated to allow it to do new tasks. R2 can also be operated by remote control. An operator can use a headset to see what Robonaut sees through its cameras. The operator can then use controls to make Robonaut move.
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<div class="subtitle heading1">RASSOR</div>
+<div class="textR1"><iframe width="560" height="315" src="https://www.youtube.com/embed/4ImQih8vlkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="vidButton">
+<a href="https://technology.nasa.gov/patent/KSC-TOPS-7#:~:text=RASSOR%20is%20a%20teleoperated%20mobile,gravity%20conditions%20with%20high%20reliability." target="_blank">Learn More</a></div>
+</div>
+
+<div class="textL1">
+	The National Aeronautics and Space Administration (NASA) seeks partners interested in the commercial application of the Regolith Advanced Surface Systems Operations Robot (RASSOR) Excavator. NASAs Kennedy Space Center is soliciting licensees for this innovative technology. RASSOR is a teleoperated mobile robotic platform with a unique space regolith excavation capability. Its design incorporates net-zero reaction force, thus allowing it to load, haul, and dump space regolith under extremely low gravity conditions with high reliability. With space transportation costs hovering at approximately $4,000 per pound and tight launch vehicle shroud constraints, this compact, lightweight unit enables the launch of an efficient, rugged, versatile robotic excavator on precursor landing missions with minimum cost. RASSOR could also be scaled up and used for terrestrial mining operations in difficult-to-reach or dangerous locations.
+</div>
+
+<div class="heading1 subtitle">Curiosity Rover</div>
+
+<div class="textR1"><iframe width="560" height="315" src="https://www.youtube.com/embed/7zpojhD4hpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+	<div class="vidButton">
+		<a href="https://www.nasa.gov/mission_pages/msl/index.html" target="_blank">Learn More</a>
+	
+</div>
+</div>
+<div class="textL1">
+	With its rover named Curiosity, Mars Science Laboratory mission is part of NASA's Mars Exploration Program, a long-term effort of robotic exploration of the red planet. Curiosity was designed to assess whether Mars ever had an environment able to support small life forms called microbes. In other words, its mission is to determine the planet's "habitability."﻿
+
+	In December 2012, Curiosity's two-year mission was extended indefinitely,[17] and on August 5th, 2017, NASA celebrated the fifth anniversary of the Curiosity rover landing.[18][19] The rover is still operational, and as of July 1, 2020, Curiosity has been on the planet Mars for 2809 sols (2885 total days) since landing on August 6th, 2012.
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="zoom1">
+	<img src="images/robots-future.jpg">
+</div>
+
+
+<div class="heading1">Future Robots</div>
+
+<div class="heading1 subtitle">Puffer</div>
+
+<div class="textR1"><iframe width="560" height="315" src="https://www.youtube.com/embed/nRmorQmGqVM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="vidButton">
+<a href="https://spectrum.ieee.org/automaton/robotics/space-robots/puffer-jpl-popup-exploring-robot" target="_blank">Learn More</a></div>
+</div>
+
+<div class="textL1">
+	The Pop-Up Flat Folding Explorer Robot (PUFFER) in development at NASA's Jet Propulsion Laboratory in Pasadena, California, was inspired by origami. Its lightweight design is capable of flattening itself, tucking in its wheels and crawling into places rovers can't fit.
+
+	Over the past year and a half, PUFFER has been tested in a range of rugged terrains, from the Mojave Desert in California to the snowy hills of Antarctica. The idea is to explore areas that might be too risky for a full-fledged rover to go, such as steep slopes or behind sand dunes.
+
+	It's designed to skitter up 45-degree slopes, investigate overhangs and even drop into pits or craters. PUFFER is meant to be the hardy assistant to a larger robot companion: several of the microbots can be flattened like cards and stacked one on top of the other.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<div class="subtitle heading1">Hedgehog</div>
+<div class="textR1"><iframe width="560" height="315" src="https://www.youtube.com/embed/bDmoqjNQAu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="vidButton">
+<a href="https://www.jpl.nasa.gov/news/news.php?feature=4712" target="_blank">Learn More</a></div>
+</div>
+
+<div class="textL1">
+	Hopping, tumbling and flipping over are not typical maneuvers you would expect from a spacecraft exploring other worlds. Traditional Mars rovers, for example, roll around on wheels, and they can't operate upside-down. But on a small body, such as an asteroid or a comet, the low-gravity conditions and rough surfaces make traditional driving all the more hazardous.
+
+	Enter Hedgehog: a new concept for a robot that is specifically designed to overcome the challenges of traversing small bodies. The project is being jointly developed by researchers at NASA's Jet Propulsion Laboratory in Pasadena, California; Stanford University in Stanford, California; and the Massachusetts Institute of Technology in Cambridge.
+
+	Two Hedgehog prototypes -- one from Stanford and one from JPL -- were tested aboard NASA's C-9 aircraft for microgravity research in June 2015. During 180 parabolas, over the course of four flights, these robots demonstrated several types of maneuvers that would be useful for getting around on small bodies with reduced gravity. Researchers tested these maneuvers on different materials that mimic a wide range of surfaces: sandy, rough and rocky, slippery and icy, and soft and crumbly.
+
+
+</div>
+
+<div class="heading1 subtitle">Valkyrie</div>
+
+<div class="textR1"><iframe width="560" height="315" src="https://www.youtube.com/embed/IE-YBaYjbqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="vidButton">
+<a href="https://www.nasa.gov/feature/r5/" target="_blank">Learn More</div></a>
+
+</div>
+<div class="textL1">NASA’s R5 aka Valkyrie was designed and built by the Johnson Space Center (JSC) Engineering Directorate to compete in the 2013 DARPA Robotics Challenge (DRC) Trials. Valkyrie, a name taken from Norse mythology, is designed to be a robust, rugged, entirely electric humanoid robot capable of operating in degraded or damaged human-engineered environments. Building on prior experience from designing Robonaut 2, the JSC Valkyrie team designed and built this robot within a 15 month period, implementing improved electronics, actuators and sensing capability from earlier generations of JSC humanoid robots.
+
+
+Following the robot’s appearance at the 2013 DRC Trials, the Valkyrie team modified and improved the robot - modifying the hands to increase reliability and durability, redesigning the ankle to improve performance and upgrading sensors for increase perception capability. The Valkyrie team also partnered with the Florida Institute for Human and Machine Cognition (IHMC) to implement their walking algorithms on NASA hardware in preparation for the Space Robotics Challenge, part of NASA’s Game Changing Development Program and Centennial Challenges.</div>
+
+
+<div class="footer">
+	<a href="#top">Go to Top</a>
+	<a class="active" href="about.html">About This Page</a>
+	<a href="https://www.github.com/museHD/IST-Y10-T2/" target="_blank">My Github :)</a>
+</div>
+
+
+<script>$(document).ready(function() {
+    $('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+})</script>
+<script>
+$(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        $(".zoom img").css(
+        	"transform", "scale(" + (-25 + scroll/17)/65 + "," +  (-25 + scroll/17)/65 + ")",{ width: (100 + scroll/15)}
+        );
+
+        $(".zoom").css(
+        {"width": (100 + scroll/15)}
+        );
+
+        $(".zoom1 img").css(
+        	"transform", "scale(" + (-200 + scroll/17)/65 + "," +  (-200 + scroll/17)/65 + ")",{ width: (-200 + scroll/15)}
+        );
+
+        $(".zoom1").css(
+        {"width": (-400 + scroll/15)}
+        );
+    })
+</script>
+
+
+<!-- This is the script which detects whether an element is on screen or not. Works on all elements which have the class: .show-on-scroll -->
+<script>
+	// Detect request animation frame
+var scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+
+function loop() {
+
+    Array.prototype.forEach.call(elementsToShow, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('animate__fadeInUp');
+      } else {
+        element.classList.remove('animate__fadeInUp');
+      }
+    });
+
+    scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+// function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+  // function for jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+</script>
+
+
+
+</body>
+
+</html>
+
+

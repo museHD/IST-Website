@@ -39,19 +39,27 @@ html {
   -moz-animation-delay: 2s;
 }
 .navtop{
+	top:0;
+	position: sticky;
+	margin-top:-15px;
+	margin-left: -10px;
+	margin-right: -10px;
+	font-family: "textFont";
 	background-color: #333;
 	overflow: hidden;
+	text-align: center;
 
 }
 
+a{text-decoration: none; color: white}
 .navtop a{
+	margin-left: 20px;
 	float: left;
 	color:#f2f2f2;
 	text-align: center;
-	padding: 14px 8%;
+	padding: 14px 9%;
 	text-decoration: none;
 	font-size: 17px;
-
 }
 
 .navtop a:hover{
@@ -151,15 +159,52 @@ p{
 	font-size:12px;
 	color:white;
 	margin-bottom: 25px;
-	margin-top: 30px;
+	margin-top: 120px;
 	margin-left: 50px;
 	/*-webkit-animation: mover 20s infinite  alternate;
     animation: mover 20s infinite  alternate;*/
 }
 
+.link{
+	  text-decoration: underline;
+
+}
+.heading2{
+	line-height: 4.2;
+
+	font-family:'headingFont';
+	font-weight:200;
+	letter-spacing: 0.02em;
+	font-size:10px;
+	color:white;
+	margin-bottom: 25px;
+	margin-top: 40px;
+
+	/*-webkit-animation: mover 20s infinite  alternate;
+    animation: mover 20s infinite  alternate;*/
+}
+
+.heading3{
+	line-height: 4.2;
+
+	font-family:'headingFont';
+	font-weight:200;
+	letter-spacing: 0.02em;
+	font-size:12px;
+	color:white;
+	margin-bottom: 25px;
+	margin-top: 150px;
+
+	/*-webkit-animation: mover 20s infinite  alternate;
+    animation: mover 20s infinite  alternate;*/
+}
+
 .vidButton{
-	margin-top: -30px;
+	transition: 0.8s;
+	text-align: center;
+	margin-top: 15px;
 	width:170px;
+	font-family:"textFont";
 	font-size: 24px;
 	padding: 15px;
 	border: 5px solid white;
@@ -167,9 +212,24 @@ p{
 	background-color: black;
 }
 
-.mayb a:hover{
-	-webkit-animation: abcd 2s infinite alternate;
-    animation: abcd 2s  infinite alternate;
+.vidButton a{
+	color:white;
+	text-decoration: none;
+}
+.vidButton a:hover{
+	transition: 0.3s;
+	color:black;
+	text-decoration: none;
+}
+
+.vidButton:hover > a {color:black;}
+
+.vidButton:hover{
+	transition: 0.8s;
+	background-color: white;
+	color: black;
+	/*-webkit-animation: abcd 0.4s infinite linear;
+    animation: abcd 0.4s infinite linear;*/
 }
 @keyframes abcd{
 	0%{
@@ -306,19 +366,20 @@ src: url('fonts/moonglade.ttf') format('truetype');
 }
 
 .imgR{
-	  position: absolute;
-
+	  position: relative;
+	float: right;
 	width: 49%;
-	height: 300px;
+	height: 500px;
 	right: 0;
 }
 
 .imgL{
 	margin-top: 180px;
+	margin-bottom: -20px;
 	position: absolute;
 	left: 0;
 	width: 49%;
-	height: 300px;
+	height: 500px;
 	float:left;
 }
 .textL{
@@ -329,16 +390,25 @@ src: url('fonts/moonglade.ttf') format('truetype');
 }
 
 .textL1{
+	width:50%;
+	text-align: justify;
 	font-size: 21px;
 	margin-top: 15px;
 	line-height: 1.6;
 	color:white;
 	font-family: "textFont";
-	width: 50%;
+	left: 0;
 	color: white;
 	margin-bottom: 5px;
 	margin-left: 50px;
 	margin-right: 40px;
+}
+
+.textR1{
+
+	float:right;
+	color: white;
+	margin-left: 150px;
 }
 
 .textR{
@@ -362,10 +432,12 @@ src: url('fonts/moonglade.ttf') format('truetype');
 	font-family: "textFont";
 }	
 
+
 .zoom {
 
+	margin-left: -10px;
 
-  min-width: 100%;
+  min-width: 105%;
   max-width: 175%;
   min-height: 70rem;
   overflow: hidden;
@@ -376,7 +448,7 @@ src: url('fonts/moonglade.ttf') format('truetype');
 	margin-left: -10px;
 	margin-right:-10px;
 	width: 50%;
-	min-width: 100%;
+	min-width: 105%;
 	max-width: 195%;
   position: absolute;
   top: 0;
@@ -394,7 +466,44 @@ align-content: center;}
 }
 */
 
+.zoom1 {
+
+margin-left: -10px;
+  min-width: 105%;
+  max-width: 175%;
+  min-height: 70rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom1 img {
+	margin-left: -10px;
+	margin-right:-10px;
+	width: 50%;
+	min-width: 105%;
+	max-width: 195%;
+  position: absolute;
+  top: 0;
+align-content: center;}
+
+
+.footer a{
+	color:white;
+	font-family: "textFont";
+	font-size: 27px;
+	margin: 0px 25px 10px 25px;
+}
+
 .footer{
+	margin-left: -10px;
+	padding: 50px;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: black;
+	align-content: center;
+	overflow: hidden;
+	width:105%;
+	margin-top: 50px;
 	text-align: center;
 }
 
