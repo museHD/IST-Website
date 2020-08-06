@@ -213,6 +213,9 @@ p{
 }
 
 .vidButton a{
+	border-radius: 30px;
+	padding: 22px 43px;
+	margin: -22px -43px;
 	color:white;
 	text-decoration: none;
 }
